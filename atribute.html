@@ -1,0 +1,39 @@
+<head>
+	<title>Изначальный</title>
+</head>
+<body>
+	<a href="https://www.google.com/webhp?hl=ru&sa=X&ved=0ahUKEwjlkJ-z3bj3AhWqRPEDHWHXCXQQPAgI" title="">Текст первой ссылки</a>
+	<a href="https://www.google.com/webhp?hl=ru&sa=X&ved=0ahUKEwjlkJ-z3bj3AhWqRPEDHWHXCXQQPAgI" title="">Текст второй ссылки</a>
+	<a href="https://www.google.com/webhp?hl=ru&sa=X&ved=0ahUKEwjlkJ-z3bj3AhWqRPEDHWHXCXQQPAgI" title="">Текст третьей ссылки</a>
+	<br><br>
+	<input type='text' value='Первый текст'>
+	<input type='text' value='Второй текст'>
+	<input type='text' value='Третий текст'>
+	<p id='test'></p>
+	<script type="text/javascript">
+		
+		var elems = document.getElementsByTagName('a');
+		for (var i = 0; i < elems.length; i++) {
+		elems[i].addEventListener('mouseover', replace);
+		}
+
+		function replace() 
+		{
+			this.title = this.innerHTML;
+			this.innerHTML=this.innerHTML+' ( '+this.href+' ) '
+			this.removeEventListener('mouseover', replace)
+		}
+
+		var elems2 = document.getElementsByTagName('input');
+		for (var i = 0; i < elems.length; i++) {
+		elems2[i].addEventListener('blur', inp);
+		}
+
+		function inp() 
+		{
+			text=document.getElementById('test')
+			text.innerHTML=this.value
+		}
+
+	</script>
+</body>

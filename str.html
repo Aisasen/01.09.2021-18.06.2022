@@ -1,0 +1,39 @@
+<head>
+	<title>Строки</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let str='aaa@bbb@ccc'
+		let strr=str.replace(/@/g,'+')
+		alert (strr)
+
+		let str2='ааа ппп ссс'
+		alert(str2.substr(4,4))
+		alert(str2.slice(4,7))
+
+		let date='2025-10-31'
+		alert(date.replace(/-/g, '/'))
+
+		let arr=['я', 'учу', 'javascript', '!']
+		let strarr=arr.join('+')
+		alert (strarr)
+
+		let strup='Преобразуйте первую букву каждого слова строки в верхний регистр.'
+		let struped=strup.split(' ')
+		for (let i=0; i<struped.length; i++)
+		{
+			struped[i]=struped[i].slice(0,1).toUpperCase()+struped[i].slice(1)
+		}
+		let slitie=struped.join(' ')
+		alert (slitie)
+
+		let strf='var_test_text'
+		let strfnew=strf.split('_')
+		for (let i=1; i<strfnew.length; i++)
+		{
+			strfnew[i]=strfnew[i].slice(0,1).toUpperCase()+strfnew[i].slice(1)
+		}
+		let slitie2=strfnew.join('')
+		alert (slitie2)
+	</script>
+</body>

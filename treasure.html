@@ -1,0 +1,89 @@
+<head>
+	<title>Клад</title>
+</head>
+<body>
+	<h1>Найди клад!</h1>
+	<p id="count">У вас осталось 100 попыток.</p>
+	<big><p id="distance"><font size="30"></font></p></big>
+	<img id="map" src="http://nostarch.com/images/treasuremap.png" width="800" height="800">
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+	<script type="text/javascript">
+		var clicks = 0
+		var live= 100
+		var getRandomNumber = function (size)
+		{
+			return Math.floor(Math.random() * size)
+		}
+		var width = 800
+		var height = 800
+		var target = 
+		{
+		x: getRandomNumber(width),
+		y: getRandomNumber(height)
+		}
+
+		$("#map").click(function (event) 
+		{
+			clicks++
+			live--
+			var getDistance = function (event, target) 
+			{
+			var diffX = event.offsetX - target.x;
+			var diffY = event.offsetY - target.y;
+			return Math.sqrt((diffX * diffX) + (diffY * diffY));
+			}
+			var distance = getDistance(event, target)
+			var distanceHint = getDistanceHint(distance)
+			$("#distance").text(distanceHint)
+			if (distance < 10) 
+			{
+				alert("Клад найден! Сделано кликов:" + clicks);
+			}
+			if (live==0)
+			{
+				alert("Вы проиграли!")
+			}
+			document.getElementById("count").innerHTML="У вас осталось "+live+" попыток."
+		})
+
+		var getDistanceHint = function (distance) {
+		if (distance < 15) 
+		{
+			return ("Обожжешься!")
+		}
+		else if (distance < 20) 
+		{
+			return ("Очень-очень горячо")
+		} 
+		else if (distance < 30) 
+		{
+			return ("Очень горячо")
+		} 
+		else if (distance < 40) 
+		{
+			return ("Горячо")
+		} 
+		else if (distance < 80) 
+		{
+			return ("Тепло")
+		} 
+		else if (distance < 160) 
+		{
+			return ("Холодно")
+		} 
+		else if (distance < 320) 
+		{
+			return ("Очень холодно")
+		}
+		else if (distance < 600) 
+		{
+			return ("Очень-очень холодно")
+		}  
+		else if (distance < 800)
+		{
+			return ("Замерзнешь!")
+		}
+		}
+
+	</script>
+</body>

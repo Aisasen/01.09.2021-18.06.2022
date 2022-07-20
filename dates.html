@@ -1,0 +1,141 @@
+<head>
+	<title>
+		Даты
+	</title>
+</head>
+<body>
+		<input type='text' onblur="birthday()" id='one'>
+	<script type="text/javascript">
+
+		//1
+		let months=['фв','мр','апрель','ма','ин','ил','ав','сн','ок','нб','дк']
+		let month=new Date()
+		alert (months[month.getMonth()-1])
+
+		//2
+		let date=new Date()
+		function pluszero (hour, minute, second, day, month, year)
+		{
+			hour=date.getHours()
+			minute=date.getMinutes()
+			second=date.getSeconds()
+			day=date.getDate()
+			month=date.getMonth()+1
+			year=date.getFullYear()
+			if (day<10)
+			{
+				day='0'+day
+			}
+			if (month<10)
+			{
+				month='0'+month
+			}
+			if (hour<10)
+			{
+				month='0'+hour
+			}
+			if (minute<10)
+			{
+				month='0'+minute
+			}
+			if (second<10)
+			{
+				month='0'+second
+			}
+			alert (hour+':'+minute+':'+second+' '+day+'.'+month+'.'+year)
+		}
+		pluszero()
+
+		//3
+		let days=new Date()
+		function weekday(day)
+		{
+			day=days.getDay()
+			if (day==1)
+			{
+				alert ("Понедельник")
+			}
+			if (day==2)
+			{
+				alert ("Вторник")
+			}
+			if (day==3)
+			{
+				alert ("Среда")
+			}
+			if (day==4)
+			{
+				alert ("Четверг")
+			}
+			if (day==5)
+			{
+				alert ("Пятница")
+			}
+			if (day==6)
+			{
+				alert ("Суббота")
+			}
+			if (day==7)
+			{
+				alert ("Воскресенье")
+			}
+		}
+		weekday()
+
+		//4
+		let before=new Date(2017, 5, 17)
+		function weekdaybefore(day)
+		{
+			day=before.getDay()
+			if (day==1)
+			{
+				alert ("Понедельник")
+			}
+			if (day==2)
+			{
+				alert ("Вторник")
+			}
+			if (day==3)
+			{
+				alert ("Среда")
+			}
+			if (day==4)
+			{
+				alert ("Четверг")
+			}
+			if (day==5)
+			{
+				alert ("Пятница")
+			}
+			if (day==6)
+			{
+				alert ("Суббота")
+			}
+			if (day==7)
+			{
+				alert ("Воскресенье")
+			}
+		}
+		weekdaybefore()
+
+		//5
+		let now=new Date()
+		hour=now.getHours()
+		minute=now.getMinutes()
+		second=now.getSeconds()
+		date=now.getDate()
+		month=now.getMonth()+1
+		year=now.getFullYear()
+		let tomorrow=new Date(year, month-1, date, 23, 59, 59)
+		let diff=now-tomorrow
+		alert('Оставшееся время дня '+diff/1000+'- секунд')
+
+		//6
+		birthday()
+		{
+			elem=document.getElementById('one')
+			alert(new Date(elem.value))
+		}
+	</script>
+
+</body>

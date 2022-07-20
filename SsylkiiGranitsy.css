@@ -1,0 +1,16 @@
+table {margin: 3em;border-collapse: collapse; border: 1px solid black;}  
+caption {text-align: left;margin-bottom: 0.2em;}
+th,td {padding: 0.5em;border: 1px solid black;}
+td a {text-decoration: none;border-bottom-width: 1px;}
+
+a#pervaya {color: orange;border-bottom-style: dashed;border-bottom-color: orange;}
+a#vtoraya {color: green;border-bottom-style: dotted;border-bottom-color: green;}
+
+#test a:link, #test a:visited {color: red;text-decoration: none;} 
+#test a:hover {color: blue;text-decoration: underline;}
+a:link.www, a:visited.www {color: blue;text-decoration: underline;}		
+a:hover.www {text-decoration: none;}
+
+#d1 {width: 200px;height: 200px; border: 1px solid red;}
+#d2 {width: 500px;height: 200px; border-top: 1px solid blue; border-bottom: 1px solid red; border-left: 1px solid black; border-right: 1px solid green; border-radius: 20px;}
+

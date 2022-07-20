@@ -1,0 +1,44 @@
+<head>
+	<title>Таймер4</title>
+	<style type="text/css">
+		#smile1 {display: none}
+		#smile2 {display: none}
+		#smile3 {display: none}
+	</style>
+</head>
+<body>
+	<img src='smile.jpg' width="250" height="250" id='smile1'>
+	<img src='evilsmile.jpg' width="300" height="300" id='smile2'>
+	<img src='hmsmile.jpg' width="500" height="300" id='smile3'>
+	<script type="text/javascript">
+		var image1 = document.getElementById('smile1');
+		setInterval(function(){
+    			setTimeout(function(){
+        			image1.style.display = "block";
+        			setTimeout(function(){
+        			image1.style.display = "none";
+       		 	},250);
+   			},250);
+		},1500);
+		var image2 = document.getElementById('smile2');
+		setTimeout(function(){setInterval(function(){
+    			setTimeout(function(){
+        			image2.style.display = "block";
+        			setTimeout(function(){
+        			image2.style.display = "none";
+       		 	},250);
+   			},250);
+		},1500);
+		},500);
+		var image3 = document.getElementById('smile3');
+		setTimeout(function(){setInterval(function(){
+    			setTimeout(function(){
+        			image3.style.display = "block";
+        			setTimeout(function(){
+        			image3.style.display = "none";
+       		 	},250);
+   			},250);
+		},1500);
+		},1000);
+	</script>
+</body>

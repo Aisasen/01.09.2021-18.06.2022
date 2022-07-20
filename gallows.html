@@ -1,0 +1,68 @@
+<head>
+	<title>Виселица</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let words=['яблоко', 'ручка', 'апельсин', 'бумага', 'виселица', 'контраст', 'ваза', 'инженер', 'стекло', 'карандаш', 'материя', 'время', 'пространство']
+		let rand=Math.floor(Math.random() * words.length)
+		let word=words[rand]
+		let wordalert=''
+		let deathcount=0
+		let viselitsa=0
+		let life=prompt('Количество стадий виселицы:')
+		let wincount=0
+		let popytki=0
+		for (let i=0; i<word.length; i++)
+		{
+			wordalert+='_'
+		}
+		alert ('Ваше слово '+wordalert+word)
+
+		while (viselitsa!=life)
+	{
+
+		let bukva=prompt('Введите букву.')
+		if (typeof bukva!='string')
+			{
+				alert('Введена не буква.')
+			}
+		if (bukva.length>1)
+			{
+				alert('Введено более одной буквы.')
+			}
+		let splited=wordalert.split('')
+		for (var ii=0; ii<word.length; ii++)
+		{
+			if (word[ii]==bukva)
+			{
+				splited.splice(ii, 1, bukva)
+				wincount+=1
+			}
+			else
+			{
+				deathcount+=1
+			}
+		}
+		if (deathcount>=word.length)
+		{
+			viselitsa+=1
+		}
+		deathcount=0
+		joined=splited.join('')
+		wordalert=splited.join('')
+		alert (joined)
+		alert ('Прогресс виселицы: '+viselitsa+' из '+life)
+		popytki+=1
+		if (wincount==word.length)
+		{
+			alert('Вы победили за '+popytki+' попыток.')
+			break
+		}
+		if (viselitsa==life)
+		{
+		alert('Вы проиграли!')
+		}
+	}
+
+	</script>
+</body>

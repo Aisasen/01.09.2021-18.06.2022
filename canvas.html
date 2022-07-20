@@ -1,0 +1,79 @@
+<head>
+	<title>Канва</title>
+</head>
+<body>
+	<canvas id="canvas" width="1000" height="1000"></canvas>
+	<script type="text/javascript">
+		var canvas=document.getElementById('canvas')
+		var ctx=canvas.getContext('2d')
+		//1
+		ctx.beginPath();
+		ctx.rect(20, 20, 100, 100)
+		ctx.fillStyle = "red"
+		ctx.fill();
+
+		ctx.beginPath()
+		ctx.rect(50, 50, 100, 100)
+		ctx.fillStyle = "rgb(0,0,255,0.5)"
+		ctx.fill()
+
+		//2
+		ctx.beginPath();
+		ctx.fillStyle = "black"
+		ctx.fillRect(200,20,100,100)
+    	ctx.clearRect(220,40,60,60)
+    	ctx.strokeRect(225,45,50,50)
+
+    	//3
+    	ctx.beginPath()
+    	ctx.moveTo(400,25)
+    	ctx.lineTo(350,75)
+    	ctx.lineTo(400,125)
+    	ctx.fill()
+
+    	//4
+    	ctx.beginPath()
+    	ctx.arc(70,220,50,0,Math.PI*2,true)
+    	ctx.moveTo(105,220)
+    	ctx.arc(70,220,35,0,Math.PI,false)
+    	ctx.moveTo(55,200)
+    	ctx.arc(50,200,5,0,Math.PI*2,true)
+    	ctx.moveTo(95,200)
+    	ctx.arc(90,200,5,0,Math.PI*2,true)  
+    	ctx.stroke()
+
+    	//5
+    	for (var i=0;i<6;i++)
+    	{
+   			for (var j=0;j<6;j++)
+   			{
+      			ctx.fillStyle = 'rgb(' + Math.floor(255-42.5*i) + ',' + Math.floor(255-42.5*j) + ',0)';
+      			ctx.fillRect(j*25+200,i*25+200,25,25);
+    		}
+  		}
+
+		//6
+		ctx.beginPath()
+    	ctx.moveTo(500,300)
+    	ctx.lineTo(800,300)
+    	ctx.lineTo(500,600)
+    	ctx.fillStyle='black'
+    	ctx.fill()
+    	ctx.beginPath()
+    	ctx.moveTo(900,400)
+    	ctx.lineTo(900,700)
+    	ctx.lineTo(600,700)
+    	ctx.lineTo(900,400)
+    	ctx.stroke()
+
+    	//7
+    	for (let a=1; a<10; a++)
+    	{
+    		ctx.beginPath()
+    		ctx.lineWidth=1+a
+    		ctx.moveTo(20*a+100,500)
+    		ctx.lineTo(20*a+100,800)
+    		ctx.stroke()
+    	}
+</script>
+</body>

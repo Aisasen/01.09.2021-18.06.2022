@@ -1,0 +1,76 @@
+<head>
+	<title>Выбор</title>
+	<style>
+    .selected 
+    {
+      background: red;
+    }
+
+    li 
+    {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <br>
+
+  <ul id="ul">
+    <li>Python</li>
+    <li>C++</li>
+    <li>JavaScript</li>
+    <li>PHP</li>
+    <li>C#</li>
+  </ul>
+  <script>
+
+  	function toggleSelect(li) 
+  	{
+      li.classList.toggle('selected')
+    }
+
+    function singleSelect(li) 
+    {
+     	let selected = ul.querySelectorAll(".selected")
+     	for(let elem of selected) 
+     	{
+        	elem.classList.remove('selected')
+     	}
+     	li.classList.toggle('selected')
+    }
+
+  	ul.onclick = function(event) 
+    {
+    	if (event.target.tagName != "LI")
+      	{
+      		return
+      	}
+
+
+      	if (event.ctrlKey || event.metaKey) 
+      	{
+        	toggleSelect(event.target)
+      	}
+      		else 
+      		{
+        		singleSelect(event.target)
+      		}
+
+    }
+
+    onclick = function(event) 
+    {
+    	if (event.target.tagName != "LI")
+      	{
+      		let selected = ul.querySelectorAll(".selected")
+      		for(let elem of selected) 
+      		{
+        		elem.classList.remove('selected')
+      		}
+      	}
+    }
+
+  </script>
+
+</body>

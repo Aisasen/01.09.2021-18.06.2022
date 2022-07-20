@@ -1,0 +1,65 @@
+<head>
+	<title>
+		События
+	</title>
+	<script src="sc.js"></script>
+</head>
+<body>
+	<input type="submit" onclick="alert('привет')">
+	<br><br>
+
+	<input type="submit" onclick="func1()">
+	<input type="text" value="открыть" id="one">
+	<br><br>
+
+	<input type="submit" onclick="func2()">
+	<input type="text" value="сообщение" id="two">
+	<br><br>
+
+	<input type="submit" value="4" onclick="func3()" id="three">
+	<input type="text" value="4" id="three">
+	<br><br>
+
+	<input type="submit" value="первое" id="four">
+	<input type="submit" value="второе" id="five">
+	<input type="submit" value="Обменять" onclick="func4()" id="six">
+	<br><br>
+
+	<input type="submit" value="текст" onclick="func5()" id="seven">
+
+	<script type="text/javascript">
+		function func1()
+		{
+			var elem=document.GetElementById("one")
+			elem.value="закрыть"
+		}
+
+		function func2()
+		{
+			var elem2=document.GetElementById("two")
+			alert(elem2.value)
+		}
+
+		function func3()
+		{
+			var elem3=document.GetElementById("three")
+			alert(Math.pow(elem3.value, 2)
+		}
+
+		function func4()
+		{
+			var elem4=document.GetElementById("four")
+			var elem5=document.GetElementById("five")
+			var vremennaya=elem4.value
+			elem4.value=elem5.value
+			elem5.value=vremannaya
+		}
+
+		function func5()
+		{
+			var elem6=document.GetElementById("seven")
+			elem6.value="другой текст"
+		}
+
+	</script>
+</body>

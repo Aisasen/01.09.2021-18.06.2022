@@ -1,0 +1,63 @@
+<head>
+	<title>Матан</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		let a=10
+		let b=3
+		let c=a%b
+		alert ('Остаток: '+c)
+
+		let d=prompt('Введите первое число')
+		let e=prompt('Введите второе число')
+		let f=d%e
+		if (f>0)
+			{alert('Делится с остатком: '+f)}
+		else 
+			{alert('Делится без остатка')}
+
+		let st=Math.pow(2, 10)
+		alert ('2^10='+st)
+
+		let st2=Math.sqrt(245)
+		alert ('Корень из 245 раавен: '+st2)
+
+		let arr=[4,2,5,19,13,0,10]
+		let sum=0
+		for (let i=0; i<arr.length-1; i++)
+		{
+			sum+=Math.pow(arr[i],3)
+		}
+		let sqr=Math.sqrt(sum)
+		alert (sqr)
+
+		let k=379
+		let t=Math.sqrt(379)
+		alert (t.toFixed(2))
+		alert (t.toFixed(1))
+		alert (Math.round(t))
+
+		let q=Math.sqrt(587)
+		let fl=Math.floor(q)
+		let cl=Math.ceil(q)
+		alert (fl)
+		alert (cl)
+
+		let arr2=[4,-2,5,19,-130,0,10]
+		alert (Math.max.apply(null, arr2))
+		alert (Math.min.apply(null, arr2))
+
+		let arr3=[]
+		for (let h=0; h<9; h++)
+		{
+			arr3[h]=' '+Math.floor(Math.random() * 1000)
+		}
+		alert (arr3)
+
+		let o=prompt('')
+		let p=prompt('')
+		let l=Math.abs(o-p)
+		alert (l)
+	</script>
+</body>

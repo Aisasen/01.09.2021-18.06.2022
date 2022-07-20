@@ -1,0 +1,93 @@
+<head>
+	<title>
+		Флаги
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		let arr=[1,2,3,4,5]
+		let flag=false
+		for (let i=0; i<arr.length; i++)
+		{
+			if (arr[i]=5)
+			{
+				flag=true
+				break
+			}
+		}
+		if (flag==true)
+		{
+			alert ("Есть")
+		}
+		if (flag==false)
+		{
+			alert("Нет")
+		}
+
+		num=prompt("Введите число")
+		flag2=true
+		for (i=2; i<num-1; i++)
+		{
+			if (num%i==0)
+			{
+				flag2=false
+				break
+			}
+		}
+		if (flag2==true)
+		{
+			alert("Число простое")
+		}
+		if (flag2==false)
+		{
+			alert("Число не простое")
+		}
+
+		let arr2=[]
+		for (i=0; i<5; i++)
+		{
+			arr2[i]=prompt("Введите "+i+" элемент массива")
+		}
+		flagpodryad=false
+		for (let i=0; arr2.length; i++)
+		{
+			if (arr2[i]==arr2[i+1])
+			{
+				flagpodryad=true
+				break
+			}
+		}
+		if (flagpodryad==true)
+		{
+			alert ("В массиве есть два подряд повторяющихся числа")
+		}
+		if (flagpodryad==false)
+		{
+			alert ("В массиве нет двух повторяющихся чисел подряд")
+		}
+
+		num2=prompt("Введите число")
+		function negativecheck (num)
+		{
+			let flagnegative=false
+
+			if (num>0)
+			{
+				flagnegative=true
+			}
+
+			if (flagnegative==true)
+			{
+				alert("Число положительное")
+			}
+
+			if (flagnegative==false)
+			{
+				alert("Число отрицательное")
+			}
+
+		}
+		negativecheck(num2)
+	</script>
+</body>

@@ -1,0 +1,241 @@
+.one
+{
+	border: 1px solid black;
+	width: 100px; height: 100px;
+	background: red;
+	margin: 1%
+}
+
+.two
+{
+	border: 1px solid black;
+ 	width: 100px;
+ 	height: 100px;
+    background: blue;
+    position:relative;
+    left:110px;
+    margin: 1%}
+
+.three
+{
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	background: green;
+	position:relative;
+	left:220px;
+	margin: 1%}
+
+
+.one1
+{
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+
+.two2
+{
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	background: blue;
+	position:relative;
+	left:50px;
+	bottom: 50px
+}
+
+.three3
+{
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	background: green;
+	position:relative;
+	left:100px;
+	bottom: 100px
+}
+
+.circle 
+{ 
+	width: 20em;
+	height: 20em;
+	border: 2px solid green;
+	border-radius: 50%;
+	background: green;
+	margin:auto;
+}
+.noise
+{
+ 	width: 3em;
+ 	height: 3em;
+ 	border: 2px solid white;
+ 	background: white;
+ 	position:relative;
+ 	bottom:190px;
+ 	margin:auto;
+}
+
+.circle1 
+{ 
+	width: 5em;
+	height: 5em;
+	border: 2px solid white;
+	border-radius: 50%;
+	background: white;
+	margin:auto;
+	bottom:20em;
+	position:relative;
+	left: 3.9em;
+
+}
+
+.circle2
+{ 
+	width: 5em;
+	height: 5em;
+	border: 2px solid white;
+	border-radius: 50%;
+	background: white;
+	margin:auto;
+	bottom:25em;
+	position:relative;
+	right: 4em}
+.rot 
+{
+	margin:auto;
+	position:relative;
+	border: 1px solid white;
+	background: white;
+	width:200px;
+	height:25px;
+	bottom: 325px
+}
+
+.circledva 
+{
+	width: 20em;
+	height: 20em;
+	border: 2px solid yellow;
+	border-radius: 50%;
+	background: yellow;
+	margin:auto;
+}
+
+.noisedva 
+{
+	width: 3em;
+    height: 3em;
+    border: 2px solid white;
+    background: white;
+    position:relative;
+    bottom:190px;
+    margin:auto;
+    border-radius: 50%
+}
+.circle1dva 
+{ 
+	width: 5em;
+	height: 5em;
+	border: 2px solid white;
+	border-radius: 50%;
+	background: white;
+	margin:auto;
+	bottom:20em;
+	position:relative;
+	left: 3.9em
+}
+.circle2dva
+{
+  width: 5em;
+  height: 5em;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: white;
+  margin:auto;
+  bottom:25em;
+  position:relative;
+  right: 4em
+}
+
+
+.rotdva 
+{
+	margin:auto;
+	position:relative;
+	border: 1px solid white;
+	background: white;
+	width:200px;
+	height:25px;
+	bottom: 325px;
+	border-radius: 50%
+}
+.rottri 
+{
+	margin:auto;
+	position:relative;
+	border: 1px solid yellow;
+	background: yellow;
+	width:200px;
+	height:25px;
+	bottom: 360px;
+	border-radius: 50%
+}
+
+.korpus 
+{
+	margin:auto;
+	border:1px solid black;
+	width: 10%;
+	height: 50%
+}
+
+.red 
+{
+	width: 7em;
+	height: 7em;
+	border: 2px solid red;
+	border-radius: 50%;
+	background: red;
+	margin:auto;
+	margin:auto;
+	position: relative;
+	bottom: 46%;
+}
+
+.yellow 
+{
+	width: 7em;
+	height: 7em;
+	border: 2px solid yellow;
+	border-radius: 50%;
+	background: yellow;
+	margin:auto;
+	position: relative;
+	bottom: 44%
+}
+
+.green 
+{
+	width: 7em;
+	height: 7em;
+	border: 2px solid green;
+	border-radius: 50%;
+	background: green;
+	margin:auto;
+	position: relative;
+	bottom: 42%
+}
+
+.portal
+{
+	margin:auto;
+	border: 1px solid yellow;
+	width: 100%;
+	height: 100px;
+	background: yellow;
+	font-size: 40px;
+	position:fixed;
+	z-index: 100
+}

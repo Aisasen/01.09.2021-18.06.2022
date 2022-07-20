@@ -1,0 +1,23 @@
+.perv {color:blue; text-decoration: none}
+.derv {  text-decoration: none; padding: 10px}
+.derv:hover {color:red;  text-decoration: none;}
+.der {color:blue; text-decoration: none;}
+.cont {margin: 3em; border-collapse: collapse; border: 1px solid blue; border-width: 1px; padding: 1em;border; width:20%}
+.cont:hover {font-weight:bold; text-decoration: none}
+.cont2 {margin: 3em; font-weight:bold; border-collapse: collapse; border: 1px solid blue; border-width: 1px; padding: 1em;border; width:20%; background: black; text-decoration: none; color: white}
+.cont2:hover {margin: font-weight:bold;  border-collapse: collapse; border: 1px solid blue; border-width: 1px; padding: 1em;border; width:20%; background: white; text-decoration: none; color: black}
+.cont3 {margin: 3em; font-weight:bold; border-collapse: collapse; border: 1px solid blue; border-width: 1px; padding: 1em;border; width:20%; background: blue; text-decoration: none; color: white}
+
+
+.cont3:hover {margin: font-weight:bold;  border-collapse: collapse; border: 1px solid blue; border-width: 1px; padding: 1em;border; width:20%; background-image: url("samolet.jpg");background-position: right; text-decoration: none; }
+
+
+li.vtor{display: inline-block; width: 200px;border: 1px solid blue; text-align: center; margin: 5px;}
+li.vtor:hover{display: inline-block; width: 200px;border: 1px yellow; text-align: center; margin: 5px;background: rgb(55,55,55); color:white;font-weight:bold}
+p li.vtor:hover{color: white}
+img#ya{align-items: center;display: block;
+    margin-left: auto;
+    margin-right: auto;justify-content: center;}
+#y{width: 80%;background: rgb(255,128,0);}
+li.vtor2:hover{display: inline-block; width: 200px;border: 1px yellow; text-align: center; margin: 5px; background: red; color:white;}
+li.vtor2{display: inline-block; width: 200px;border: 1px yellow; text-align: center; margin: 5px; background: rgb(255,128,0); color:rgb(164,164,164); font-weight:bold;font-size: 30px}

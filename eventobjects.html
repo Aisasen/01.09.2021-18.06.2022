@@ -1,0 +1,56 @@
+<head>
+	<title>Объекты событий</title>
+</head>
+<body>
+	<style type="text/css">
+		#area {border: 1px solid black; width: 200px; height: 200px;}
+	</style>
+	<div id="area" onmousemove="coordinates">
+	</div>
+	<br>
+	<input id="input">
+	<div id="result"></div>
+	<br>
+	<input type="button" id="button" value="Нажмите на кнопку">
+	<script type="text/javascript">
+		//1
+		var mesto = document.getElementById('area')
+		mesto.onmousemove = func
+		function func(event) 
+		{
+		this.innerHTML = event.clientX + ':' + event.clientY
+		}
+		//4,5
+		var input = document.getElementById('input')
+		var result = document.getElementById('result')
+		input.onkeypress = funccode;
+		function funccode(event) 
+		{
+		var code = event.keyCode
+		var key = String.fromCharCode(event.keyCode)
+		result.innerHTML = 'Код: ' + code + ', клавиша ' + key;
+		}
+		//6
+		var button = document.getElementById('button');
+		button.addEventListener('click', funcspec);
+		function funcspec(event) 
+		{
+			if (event.ctrlKey) 
+				{
+					this.value = '1'
+					this.style.color = 'green'
+				}
+			if (event.altKey) 
+				{
+					this.value = '2'
+					this.style.color = 'blue'
+				}
+			if (event.shiftKey) 
+				{ 
+					this.value = '3'
+					this.style.color = 'red'
+				} 
+		}
+
+	</script>
+</body>

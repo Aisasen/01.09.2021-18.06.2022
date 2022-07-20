@@ -1,0 +1,101 @@
+<head>
+	<title>Таймеры</title>
+	<style type="text/css">
+	#smile1 {display: none}
+	#smile2 {display: none}
+	#smile3 {display: none}
+	</style>
+</head>
+<body>
+	<input type="text" value="1" id="test">
+	<input type="submit" value="Запустить таймер!" onclick="start()">
+	<input type="submit" value="Остановить таймер!" onclick="stop()">
+	<script type="text/javascript">
+		//1
+		function start() 
+		{
+		window.timerId = window.setInterval(timer, 1000); 
+		}
+
+		function timer() 
+		{
+		var elem = document.getElementById('test');
+		elem.value = parseInt(elem.value)+1; 
+		}
+
+		function stop() 
+		{
+		window.clearInterval(window.timerId); 
+		}
+	</script>
+<br><br><br>
+	<input type="text" id='data'>
+	<script type="text/javascript">
+		//2
+		var data=new Date
+		function datainterval() 
+		{
+			window.setInterval(datatimer, 1000)
+		}
+
+		function datatimer() 
+		{
+			var elemdata=document.getElementById('data')
+			elemdata.value=data.getHours()+':'+data.getMinutes()+':'+data.getSeconds()
+			data=new Date
+		}
+		datainterval()
+	</script>
+	<br><br><br>
+	<input type="text" value="10" id='reverse'>
+	<input type="submit" value="Запустить таймер!" onclick="reversetimer()">
+	<script type="text/javascript">
+		//3
+		function reversetimer()
+		{
+			window.setInterval(reverse, 500)
+		}
+
+		function reverse()
+		{
+			var elem3=document.getElementById('reverse')
+			elem3.value = parseInt(elem3.value)-1
+		}
+	</script>
+	<br><br><br>
+	<img src='smile.jpg' width="250" height="250" id='smile1'>
+	<img src='evilsmile.jpg' width="300" height="300" id='smile2'>
+	<img src='hmsmile.jpg' width="500" height="300" id='smile3'>
+	<script type="text/javascript">
+		//4
+		var image1 = document.getElementById('smile1');
+		setInterval(function(){
+    			setTimeout(function(){
+        			image1.style.display = "block";
+        			setTimeout(function(){
+        			image1.style.display = "none";
+       		 	},250);
+   			},250);
+		},1500);
+		var image2 = document.getElementById('smile2');
+		setTimeout(function(){setInterval(function(){
+    			setTimeout(function(){
+        			image2.style.display = "block";
+        			setTimeout(function(){
+        			image2.style.display = "none";
+       		 	},250);
+   			},250);
+		},1500);
+		},500);
+		var image3 = document.getElementById('smile3');
+		setTimeout(function(){setInterval(function(){
+    			setTimeout(function(){
+        			image3.style.display = "block";
+        			setTimeout(function(){
+        			image3.style.display = "none";
+       		 	},250);
+   			},250);
+		},1500);
+		},1000);
+	</script>
+</body>

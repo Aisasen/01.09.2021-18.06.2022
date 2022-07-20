@@ -1,0 +1,118 @@
+body {
+
+padding: 200px; }
+
+.cube > div {
+
+width: 100px;
+
+height: 100px;
+
+backface-visibility: visible;
+
+color: white;
+
+position: absolute; }
+
+.cube {
+
+transform-style: preserve-3d;
+
+width: 100px;
+
+height: 100px;
+
+border: 1px solid blue;
+
+position: relative;
+
+margin:150px 100px;
+
+animation: anim 4s ease infinite alternate;
+
+}
+.center {
+
+background-color:red;
+
+top: 0px;
+
+left: 0px;
+
+}
+
+.left {
+
+background-color:blue;
+
+top: 0px;
+
+left:-100px;
+transform:rotateY(-90deg);
+transform-origin: right;
+
+}
+
+.right {
+
+background-color:green;
+
+top: 0px;
+
+right: -100px;
+transform: rotateY(90deg);
+
+transform-origin: left;
+}
+
+
+.top {
+
+background-color:black;
+
+top: -100px;
+
+left: 0px;
+transform: rotateX(90deg);
+
+transform-origin: bottom;
+
+}
+
+.bottom {
+
+background-color:yellow;
+
+bottom: -100px;
+
+left: 0px;
+transform: rotateX(-90deg);
+
+transform-origin: top;
+}
+
+@keyframes anim {
+
+from {
+
+transform: rotateY(0deg) rotateX(30deg);
+
+
+}
+
+to {
+
+transform: rotateY(180deg);
+
+
+}
+.back {
+
+background-color:#2E9E99;
+
+top: 0px;
+
+left: 0px;
+transform: translateZ(-100px);
+}
+}

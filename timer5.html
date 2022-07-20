@@ -1,0 +1,41 @@
+<head>
+	<title>Таймер5</title>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<img src='smile.jpg' width="250" height="250" id='smile12'>
+	<img src='evilsmile.jpg' width="300" height="300" id='smile22'>
+	<img src='hmsmile.jpg' width="500" height="300" id='smile32'>
+	<script type="text/javascript">
+		var image1 = document.getElementById('smile12');
+		setInterval(function(){
+    			setTimeout(function(){
+        			image1.style.display = "none";
+        			setTimeout(function(){
+        			image1.style.display = "block";
+       		 	},500);
+   			},500);
+		},2000);
+		var image2 = document.getElementById('smile22');
+		setTimeout(function(){setInterval(function(){
+    			setTimeout(function(){
+        			image2.style.display = "none";
+        			setTimeout(function(){
+        			image2.style.display = "block";
+       		 	},500);
+   			},500);
+		},2000);
+		},250);
+		var image3 = document.getElementById('smile32');
+		setTimeout(function(){setInterval(function(){
+    			setTimeout(function(){
+        			image3.style.display = "none";
+        			setTimeout(function(){
+        			image3.style.display = "block";
+       		 	},500);
+   			},500);
+		},2000);
+		},500);
+	</script>
+</body>

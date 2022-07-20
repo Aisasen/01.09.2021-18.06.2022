@@ -1,0 +1,270 @@
+#one {margin: 3em;
+	
+	border-collapse: collapse;
+	
+	 border: 1px solid red;
+	
+	  color:red;width: 500px;
+	
+	  height: 200px;padding: 1%}
+
+#one:hover {margin: 3em;
+
+	border-collapse: collapse;
+
+	 border: 1px solid red;
+
+	  color:white;
+
+	  width: 500px;height: 200px;
+
+	  padding: 1%;background: red;
+
+	   transition:all 1s ease}
+
+#two {margin: 3em;
+
+	border-collapse: collapse;
+
+	 border: 1px solid red;
+
+	  color:red;width: 500px;
+
+	  height: 200px;
+
+	  padding: 1%}
+
+#two:hover {margin: 3em;
+
+	border-collapse: collapse;
+
+	 border: 1px solid red;
+
+	  color:red;width: 500px;
+
+	  height: 200px;padding: 1%;
+
+	  transform: scaleX(5);
+
+	  transition:all 1s ease}
+
+#three {margin: 3em;border-collapse: collapse;
+
+ border: 1px solid red;
+
+  color:red;width: 500px;
+
+ height: 200px;padding: 1%;
+
+ text-align: center}
+
+#three:hover {margin: 3em;
+
+	border-collapse: collapse;
+
+	 border: 1px solid red;
+
+	  color:red;width: 500px;
+
+	  height: 200px;padding: 1%;
+
+	  transform: right scaleX(5);
+
+	  text-align: center;
+
+	  font-size: 50px;
+
+	  transition:all 1s ease}
+
+#five:hover {margin: 3em;
+
+	border-collapse: collapse;
+
+	 color:red;width: 500px;
+
+	 height: 30px;padding: 1%;
+
+	  transform:translateX(-250px);
+
+	  transition:all 1s ease} 
+
+#six {margin: 3em;
+
+	border-collapse: collapse;
+
+	 border: 1px solid red;
+
+	  color:red;width: 500px;
+
+	  height: 200px;
+
+	  padding: 1%}
+
+#six:hover  {margin: 3em;
+
+	border-collapse: collapse;
+
+ border: 1px solid red; color:red;width: 500px;
+
+ height: 200px;
+
+ padding: 1%;
+
+ transform: scaleX(200%);
+
+ transition-delay: 3s;}
+
+.seven{padding: 40px 5%; border: 1px solid green; width:80%;}
+
+div{display: block;}
+
+.seven div {
+    background: white;
+
+    border: 1px solid red;
+
+    width: 30%;
+
+    height: 30px;
+
+    margin-bottom: 40px;
+
+    transition: all 1s ease-out;}
+
+.seven:hover div{ 
+	width: 100%;
+}
+input{
+	width: 30%;
+	height: 30px;
+	padding: 0px 5px;
+   
+
+    transition: all 1s ease-out;
+ }
+input:focus{ 
+	width: 50%; box-shadow: 0px 0px 2px blue; color: blue; outline: none;
+}
+
+#d6{
+   
+   background: white;
+   border: 1px solid red;
+   color: black;
+   
+   width: 30%;
+   height: 50px;
+   
+   text-indent: 2000px;
+   line-height: 50px;
+   text-align: center;
+   
+
+   transition: text-indent 1s linear;
+   
+   white-space: nowrap;
+}
+
+#d6:hover { 
+	color: black; text-indent: 0px; 
+}
+.eight{
+	background: white;
+	border: 1px solid red;
+   
+	width: 30%;
+	height: 30px;
+   
+	margin: 0px 0px 20px 20px;
+   
+
+    transition: all 1s ease-out;
+}
+
+
+
+.eight:hover  + .eight {
+	width: 70%;
+}
+
+.show{
+   background: white;
+   border: 1px solid red;
+   
+   padding: 10px;
+}
+
+.hint{
+	background: #FF5B5B;
+	
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	
+	margin: 20px 0px 0px -400px;
+    padding: 10px;
+	
+	text-align: center;
+	color: white;
+
+    transition: all 1s ease-out;
+	
+}
+
+.show:hover  + .hint{ 	
+	margin-left: 30%;
+}
+
+#wrapper{
+	margin: 0px auto;
+	width: 50%;
+	height: 30px;
+	border: 1px solid red;
+}
+#ramka{
+	background: red;
+	width: 0%;
+	height: 30px;
+
+	transition: all 2s linear;
+
+ }
+#wrapper:hover div{ 
+	width: 100%; 
+}
+
+#wrap{
+	margin: 0px auto;
+	width: 50%;
+	height: 30px;
+	border: 1px solid red;
+}
+#ramka2{
+	background: red;
+	width: 0%;
+	height: 30px;
+
+	transition: all 4s steps(5, start);
+
+ }
+#wrap:hover div{ 
+	width: 100%; 
+}
+
+#shadows{
+	background: white;
+	border: 1px solid red;
+	
+	width: 150px;
+	height: 50px;
+	margin: 200px auto;
+	
+	transition: all 1s linear;
+	
+	box-shadow: -100px 100px black, 100px -100px black;
+	
+}
+ 
+#shadows:hover { 
+	box-shadow: 100px 100px black, 100px 100px black; 
+}

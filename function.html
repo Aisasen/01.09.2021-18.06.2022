@@ -1,0 +1,71 @@
+<head>
+	<title>Функции</title>
+</head>
+<body>
+	<script type="text/javascript">	
+		function stepeni(x,n)
+		{
+			let result=Math.pow(x,n)
+			alert(result)
+		}
+		stepeni(3,4)
+
+		function raznoe(x,y,z)
+		{
+			let result=(x-y)/z
+			alert(result)
+		}
+		raznoe(10,4,3)
+
+		function menshee(x,y)
+		{
+			if (x<y)
+			{
+				alert(x)
+			}
+			if else(y<x)
+			{
+				alert(y)
+			}
+		}
+		menshee(10,4)
+
+		function nedelya(day)
+		{
+			if (day==1)
+			{
+				alert("Понедельник")
+			}
+			if else (day==2)
+			{
+				alert("Вторник")
+			}
+			if else (day==3)
+			{
+				alert("Среда")
+			}
+			if else (day==4)
+			{
+				alert("Четверг")
+			}
+			if else (day==5)
+			{
+				alert("Пятница")
+			}
+			if else (day==6)
+			{
+				alert("Суббота")
+			}
+			if else (day==7)
+			{
+				alert("Воскресенье")
+			}
+			if else (day<1||day>7)
+			{
+				alert("Задано число не от 1 до 7.")
+			}
+		}
+		day=prompt("Введите номер дня недели")
+		nedelya(day)
+	</script>
+</body>
