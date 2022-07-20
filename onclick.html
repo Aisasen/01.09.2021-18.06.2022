@@ -1,0 +1,19 @@
+<head>
+  <title>Перемещение</title>
+  <style type="text/css">
+    div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    }
+  </style>
+</head>
+<div id="mobile"></div>
+<script>
+    document.body.onclick = function(movefunc){
+    mobile.style.left = movefunc.pageX;
+    mobile.style.top = movefunc.pageY;
+}
+</script>
+</body>

@@ -1,0 +1,19 @@
+<head>
+	<title>Таймер3</title>
+</head>
+<body>
+	<input type="text" value="10" id='reverse'>
+	<input type="submit" value="Запустить таймер!" onclick="reversetimer()">
+	<script type="text/javascript">
+		function reversetimer()
+		{
+			window.setInterval(reverse, 500)
+		}
+
+		function reverse()
+		{
+			var elem3=document.getElementById('reverse')
+			elem3.value = parseInt(elem3.value)-1
+		}
+	</script>
+</body>

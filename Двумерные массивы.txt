@@ -1,0 +1,31 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int numRows;
+int numCols;
+cin>>numRows;
+cin>>numCols;
+int bylo[numCols];
+
+int tablica[numRows][numCols] = { 0 };
+for (int row = 0; row < numRows; ++row)
+for (int col = 0; col < numCols; ++col)
+
+    {
+        tablica[row][col] = row * col;
+        bylo[row]=tablica[row][col];
+
+if (tablica[row][col]=bylo[0,row])
+    
+        {
+        cout << tablica[row][col] << "\t";
+        cout << '\n';
+    
+        }
+    }
+return 0;
+}

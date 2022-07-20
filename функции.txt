@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+float ploshad()
+{
+    float a,b;
+    cin>>a;
+    cin>>b;
+    float s=(a*b)/2;
+    return s;
+}
+
+int main ()
+{
+    float s1=ploshad();
+    float s2=ploshad();
+    float s3=ploshad();
+    cout<<"Первая площадь:";
+    cout<<s1<<endl;
+    cout<<"Вторая площадь:";
+    cout<<s2<<endl;
+    cout<<"Третья площадь:";
+    cout<<s3<<endl;
+    if (s1>s2 and s1>s3)
+        cout<<"Наибольшая первая";
+    if (s2>s1 and s2>s3)
+        cout<<"Наибольшая первая";
+    if (s3>s2 and s3>s1)
+        cout<<"Наибольшая первая";
+}

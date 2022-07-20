@@ -1,0 +1,7 @@
+.er::first-letter{font-family: Times New Roman;color: red;font-size: 30px }
+.er::selection{background: green;color:white; text-decoration: underline}
+#i1:focus{color:green;font-weight:bold;}
+#i2:focus{box-shadow: 10px 10px;color:red;}
+#i3:focus{width: 500px;box-shadow: 10px 10px}
+.ad::before{content:"Начало:";color: red}
+.ad::after{content:"Конец";color: red}

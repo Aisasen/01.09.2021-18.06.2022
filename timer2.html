@@ -1,0 +1,21 @@
+<head>
+	<title>Таймер2</title>
+</head>
+<body>
+	<input type="text" id='data'>
+	<script type="text/javascript">
+		var data=new Date
+		function datainterval() 
+		{
+			window.setInterval(datatimer, 1000)
+		}
+
+		function datatimer() 
+		{
+			var elemdata=document.getElementById('data')
+			elemdata.value=data.getHours()+':'+data.getMinutes()+':'+data.getSeconds()
+			data=new Date
+		}
+		datainterval()
+	</script>
+</body>

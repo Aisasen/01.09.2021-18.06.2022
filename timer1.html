@@ -1,0 +1,28 @@
+<head>
+	<title>Таймер1</title>
+	<style type="text/css">
+ 	</style>
+</head>
+<body>
+	<input type="text" value="1" id="test">
+	<input type="submit" value="Запустить таймер!" onclick="start()">
+	<input type="submit" value="Остановить таймер!" onclick="stop()">
+	<script type="text/javascript">
+		//1
+		function start() 
+		{
+		window.timerId = window.setInterval(timer, 1000); 
+		}
+
+		function timer() 
+		{
+		var elem = document.getElementById('test');
+		elem.value = parseInt(elem.value)+1; 
+		}
+
+		function stop() 
+		{
+		window.clearInterval(window.timerId); 
+		}
+</script>
+</body>

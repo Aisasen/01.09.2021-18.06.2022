@@ -1,0 +1,64 @@
+<head>
+	<title>Циклы</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		//1
+		let str=''
+		for (let i=9; i>0; i--)
+		{
+			str+=i
+		}
+		alert (str)
+
+		//2
+		let str2=''
+		for (let i=1; i<10; i++)
+		{
+			str2+='-'
+					for (let j=0; j<1; j++)
+					{
+						str2+=i
+					}
+		}
+		str2+='-'
+		alert (str2)
+
+		//3
+		let str3=''
+		for (let i=0; i<21; i++)
+		{
+			for (let j=0; j<i; j++)
+			{
+				str3+='x'
+			}
+			str3+='\n'
+		}
+		alert (str3)
+
+		//4
+		let str4=''
+		for (let i=0; i<10; i++)
+		{
+			for (let j=0; j<i; j++)
+			{
+				str4+=i
+			}
+			str4+='\n'
+		}
+		alert (str4)
+
+		//5
+		let str5=''
+		for (let i=0; i<6; i++)
+		{
+			for (let j=0; j<i; j++)
+			{
+				str5+='xx'
+			}
+			str5+='\n'
+		}
+		alert (str5)
+	</script>
+</body>

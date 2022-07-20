@@ -1,0 +1,34 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int count, vozrast, min=100, max=0, srednee, summa=0, i;
+cout<<"Сколько посетителей было за день?"<<endl;
+cin>>count;
+for (i=1;i<=count;i++)
+
+    {   cout<<"Введите возраст посетителя"<<endl;
+        cin>>vozrast;
+        if (vozrast>=max)
+           { max=vozrast;}
+        else
+           { continue;}
+        if (vozrast<=min)
+           { min=vozrast;}
+        else 
+            {continue;}
+        summa=+vozrast;
+    }
+         
+srednee=summa/count;
+cout<<"Средний возраст посетителя:";
+cout<<srednee<<endl;
+cout<<"Минимальный возраст посетителя:";
+cout<<min<<endl;
+cout<<"Максимальный возраст посетителя:";
+cout<<max<<endl;
+
+}
